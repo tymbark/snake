@@ -1,5 +1,8 @@
 package com.example.snake;
 
+import hiscore.HiScoreActivity;
+import hiscore.PopupHiScoreActivity;
+import options.OptionsActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -37,7 +40,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		PopupHiScoreActivity.newScoreSaved = false;
+		PopupHiScoreActivity.setNewScoreSaved(false);
 	}
 
 	@Override
@@ -55,16 +58,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
 			break;
 			
 		case R.id.pOptions:
+			Log.d("MainActivity","Options:START");
 			Intent intent2 = new Intent(MainActivity.this, OptionsActivity.class);
             startActivityForResult(intent2, 0);
-
-			Log.d("opt","oph");
+			Log.d("MainActivity","Options:STOP");
 			break;			
 			
 		case R.id.pHiScore:
+			Log.d("MainActivity","Hiscores:START");
             Intent intent3 = new Intent(MainActivity.this, HiScoreActivity.class);
             startActivity(intent3);
-            //setContentView(R.layout.activity_playing);
+            Log.d("MainActivity","Hiscores:STOP");
 			break;
 			
 		case R.id.pExit:

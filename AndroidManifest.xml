@@ -25,13 +25,13 @@
         </activity>
         
         <activity
-            android:name="com.example.snake.HiScoreActivity"
+            android:name="hiscore.HiScoreActivity"
             android:screenOrientation="portrait"
             android:label="HiScore">
         </activity>
         
          <activity
-            android:name="com.example.snake.OptionsActivity"
+            android:name="options.OptionsActivity"
             android:screenOrientation="portrait"
             android:label="OPT">
         </activity>
@@ -44,7 +44,7 @@
         </activity>
         
         <activity
-            android:name="com.example.snake.PopupHiScoreActivity"
+            android:name="hiscore.PopupHiScoreActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Transparent"
             android:label="New Record">

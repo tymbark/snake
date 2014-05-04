@@ -1,5 +1,8 @@
 package com.example.snake;
 
+import hiscore.HiScoreActivity;
+import hiscore.PopupHiScoreActivity;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -102,7 +105,7 @@ public class SnakeCage extends SurfaceView implements Runnable{
 		direction = score = numberOfDinners = 0;
 		snakeMoved = changedDir = dinnerExists = gameOver = false;
 		initVar = true;
-		FPS = 500;
+		FPS = 350;
 		prevDir = 1;
 		//head = BitmapFactory.decodeResource(getResources(), R.drawable.snake_icon);
 		snakeTail = new ArrayList<SnakeFields>();
@@ -202,7 +205,7 @@ public class SnakeCage extends SurfaceView implements Runnable{
 		if(snakeHead.dinner){
 			// snake eats
 			score ++;
-			if(arc && FPS > 250) FPS -=5;
+			if(arc && FPS > 200) FPS -=5;
 			//Log.d("update()", "trafilem na dinner w "+pHeadX+" "+pHeadY);
 			dinnerExists = false;
 			numberOfDinners --;
@@ -259,15 +262,14 @@ public class SnakeCage extends SurfaceView implements Runnable{
 			update();
 			if(gameOver) {
 				isRunning = false;
-				//Log.d("go","i am here");
 				Context context = getContext();
 				
 				Intent intent = new Intent(context, PopupHiScoreActivity.class);
 				intent.putExtra("key",score); 
-				if(!PopupHiScoreActivity.newScoreSaved) {
+				if(!PopupHiScoreActivity.isNewScoreSaved()) {
 					context.startActivity(intent);
 				}
-				if (PopupHiScoreActivity.newScoreSaved){
+				if (PopupHiScoreActivity.isNewScoreSaved()){
 					Intent intent2 = new Intent(context, HiScoreActivity.class);
 					context.startActivity(intent2);
 					((PlayingActivity)context).finish();
@@ -383,15 +385,18 @@ public class SnakeCage extends SurfaceView implements Runnable{
 			Random rand = new Random();
 			while(true){
 				cc ++;
-				numberOfDinners ++;
+				
 				dinnerX = rand.nextInt(24);
 				dinnerY = rand.nextInt(20);
 				
 				if( playground[dinnerX][dinnerY].snake == false &&
 					playground[dinnerX][dinnerY].empty == true  &&
-					playground[dinnerX][dinnerY].dinner == false )
+					playground[dinnerX][dinnerY].dinner == false ){
+					numberOfDinners ++;
+					break;
+				}
 				
-				break;
+				
 			}
 		
 		Log.d("rollTheDinner()", "losowanie nr"+cc+"   new dinner: "+dinnerX+" "+dinnerY);
