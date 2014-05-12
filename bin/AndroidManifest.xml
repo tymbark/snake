@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
     <application
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme" >
         
         <activity
-            android:name="com.example.snake.MainActivity"
+            android:name="main.MainActivity"
             android:label="@string/app_name" 
             android:screenOrientation="portrait">
             <intent-filter>
@@ -37,7 +37,7 @@
         </activity>
         
         <activity
-            android:name="com.example.snake.PlayingActivity"
+            android:name="main.PlayingActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
             android:label="Playing">

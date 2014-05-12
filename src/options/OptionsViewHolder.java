@@ -1,12 +1,13 @@
 package options;
 
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 public class OptionsViewHolder {
 	private CheckBox checkbox;
 	private TextView textview;
-	public int no;
+	private RadioButton radiobutton;
 
 	public OptionsViewHolder(CheckBox checkbox, TextView textview) {
 		this.setCheckbox(checkbox);
@@ -30,6 +31,14 @@ public class OptionsViewHolder {
 
 	public void setTextview(TextView textview) {
 		this.textview = textview;
+	}
+
+	public RadioButton getRadiobutton() {
+		return radiobutton;
+	}
+
+	public void setRadiobutton(RadioButton radiobutton) {
+		this.radiobutton = radiobutton;
 	}
 	
 }

@@ -26,9 +26,10 @@ public final class R {
         public static final int hisResultName=0x7f070004;
         public static final int hisResultScore=0x7f070005;
         public static final int listView1=0x7f07000a;
-        public static final int menu_settings=0x7f070016;
-        public static final int optCheckbox=0x7f070015;
-        public static final int optTextview=0x7f070014;
+        public static final int menu_settings=0x7f070017;
+        public static final int opt_row_cb=0x7f070015;
+        public static final int opt_row_rb=0x7f070016;
+        public static final int opt_row_text=0x7f070014;
         public static final int pBack=0x7f070000;
         public static final int pExit=0x7f070009;
         public static final int pHiScore=0x7f070008;

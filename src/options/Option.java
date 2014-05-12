@@ -1,24 +1,29 @@
 package options;
 
+import java.util.ArrayList;
+
 import android.util.Log;
 
 public class Option {
 	private String name;
-	private boolean state;
-	private boolean checkbox;
+	private int mode; // 0-textBox, 1-checkBox, 2-separator, 3-radioButton
+	private boolean cbState;
+	private boolean rbState;
+	private ArrayList<Option> radioOptions;
 
-	public Option(String _name, boolean _state, boolean _checkbox) {
+	public Option(String _name, int _mode, boolean _cbState, boolean _rbState) {
 		setName(_name);
-		setState(_state);
-		setCheckbox(_checkbox);
+		setCbState(_cbState);
+		setRbState(_rbState);
+		setMode(_mode);
 	}
 
-	public boolean getState() {
-		return state;
+	public boolean getCbState() {
+		return cbState;
 	}
 
-	public void setState(boolean state) {
-		this.state = state;
+	public void setCbState(boolean state) {
+		this.cbState = state;
 	}
 
 	public String getName() {
@@ -30,25 +35,52 @@ public class Option {
 	}
 
 	public void toggle() {
-		this.state = !this.state;
+		this.cbState = !this.cbState;
 	}
 
-	public boolean isCheckbox() {
-		return checkbox;
+	public int getMode() {
+		return mode;
 	}
 
-	public void setCheckbox(boolean checkbox) {
-		this.checkbox = checkbox;
+	public void setMode(int mode) {
+		this.mode = mode;
 	}
 
-	public void print() {
-		if (checkbox && state)
-			Log.d("", "NAME:" + this.name + " STATE:true" + " CHECKBOX:true");
-		if (!checkbox && state)
-			Log.d("", "NAME:" + this.name + " STATE:true" + " CHECKBOX:false");
-		if (checkbox && !state)
-			Log.d("", "NAME:" + this.name + " STATE:false" + " CHECKBOX:true");
-		if (!checkbox && !state)
-			Log.d("", "NAME:" + this.name + " STATE:false" + " CHECKBOX:false");
+	public ArrayList<Option> getRadioOptions() {
+		return radioOptions;
+	}
+
+	public void setRadioOptions(ArrayList<Option> radioOptions) {
+		this.radioOptions = radioOptions;
+	}
+
+	public void radioOptionSelect() {
+		this.rbState = true;
+		for (Option o : radioOptions) {
+			o.setRbState(false);
+			o.printOption();
+		}
+	}
+
+	public boolean getRbState() {
+		return rbState;
+	}
+
+	public void setRbState(boolean rbState) {
+		this.rbState = rbState;
+	}
+
+	public void addRadioOption(Option o) {
+		if (radioOptions == null) {
+			radioOptions = new ArrayList<Option>();
+		}
+		radioOptions.add(o);
+	}
+
+	public void printOption() {
+		Log.d("OptionPrint", "name:" + name + " mode:" + mode + " cbstate:"
+				+ (cbState == true ? "true" : "false") + " rbstate:"
+				+ (rbState == true ? "true" : "false") + " rOptions:"
+				+ (radioOptions!=null? "yes" : "no"));
 	}
 }
