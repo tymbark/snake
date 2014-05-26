@@ -28,11 +28,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		Button TestDraw = (Button) findViewById(R.id.pDraw);
 		Button StartGame = (Button) findViewById(R.id.pNewGame);
 		Button Options = (Button) findViewById(R.id.pOptions);
 		Button HiScore = (Button) findViewById(R.id.pHiScore);
 		Button Close = (Button) findViewById(R.id.pExit);
 
+		TestDraw.setOnClickListener(this);
 		StartGame.setOnClickListener(this);
 		Options.setOnClickListener(this);
 		HiScore.setOnClickListener(this);
@@ -50,6 +52,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	public void onClick(View view) {
 		switch (view.getId()) {
 
+		case R.id.pDraw:
+			i = new Intent(MainActivity.this, DrawActivity.class);
+			startActivity(i);
+			break;
+		
 		case R.id.pNewGame:
 			i = new Intent(MainActivity.this, PlayingActivity.class);
 			b.putBooleanArray("options", savedOptions);

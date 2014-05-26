@@ -4,10 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/listView1"
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <main.SnakeCage
+        android:id="@+id/snakeCage1"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent" >
-    </ListView>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

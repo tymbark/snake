@@ -8,5 +8,6 @@
     <string name="s_exit">wyjscie</string>
     <string name="s_hi_score">rekordy</string>
     <string name="s_opt">opcje</string>
+    <string name="s_draw">rysuj</string>
 
 </resources>

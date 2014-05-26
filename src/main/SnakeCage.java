@@ -8,15 +8,10 @@ import java.util.Random;
 
 import com.example.snake.R;
 
-import android.R.drawable;
-import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.ViewDebug.IntToString;
-import android.widget.Toast;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;

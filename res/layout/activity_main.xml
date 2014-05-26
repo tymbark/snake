@@ -9,6 +9,14 @@
     >
 
     <Button
+        android:id="@+id/pDraw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_draw"
+        android:textSize="30sp" 
+        />
+
+    <Button
         android:id="@+id/pNewGame"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
