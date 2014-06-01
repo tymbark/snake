@@ -22,50 +22,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: tymbark.snake" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a073febe-dfa5-4140-a343-58b34bbe6cca" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/BuildConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$attr.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$drawable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$id.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$layout.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$string.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R$style.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/com/example/snake/R.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/DrawActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/DrawView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/PlayingActivity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/SnakeCage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/SnakeFields.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/main/Vector.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/snake/BuildConfig.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gen/com/example/snake/R.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/DrawActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/DrawView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/PlayingActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/SnakeCage.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/SnakeFields.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/Vector.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/hiscore/HiScoreActivity.class" afterPath="$PROJECT_DIR$/bin/classes/hiscore/HiScoreActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/main/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/main/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/options/OptionsActivity.class" afterPath="$PROJECT_DIR$/bin/classes/options/OptionsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/hiscore/PopupHiScoreActivity.class" afterPath="$PROJECT_DIR$/bin/classes/hiscore/PopupHiScoreActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-890ab5e47817decbceec6b0550bb5ef1.jar" afterPath="$PROJECT_DIR$/bin/dexedLibs/android-support-v4-890ab5e47817decbceec6b0550bb5ef1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes.dex" afterPath="$PROJECT_DIR$/bin/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/resources.ap_" afterPath="$PROJECT_DIR$/bin/resources.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/snake.apk" afterPath="$PROJECT_DIR$/bin/snake.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/bin/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hiscore/HiScoreActivity.java" afterPath="$PROJECT_DIR$/src/hiscore/HiScoreActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/options/OptionsActivity.java" afterPath="$PROJECT_DIR$/src/options/OptionsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/options/OptionsAdapter.java" afterPath="$PROJECT_DIR$/src/options/OptionsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hiscore/PopupHiScoreActivity.java" afterPath="$PROJECT_DIR$/src/hiscore/PopupHiScoreActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/draw_view.xml" afterPath="$PROJECT_DIR$/res/layout/draw_view.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/frame_layout.xml" afterPath="$PROJECT_DIR$/res/layout/frame_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/playing_view.xml" afterPath="$PROJECT_DIR$/res/layout/playing_view.xml" />
-    </list>
+    <list default="true" id="a073febe-dfa5-4140-a343-58b34bbe6cca" name="Default" comment="" />
     <ignored path="snake.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1063,7 +1020,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="743" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1084,7 +1041,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16105418" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16764276" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
