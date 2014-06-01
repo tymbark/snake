@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.snake"
+    package="tymbark.snake"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -29,7 +29,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="main.DrawActivity"
+            android:name="playing.DrawActivity"
             android:label="testdraw"
             android:screenOrientation="portrait" >
         </activity>
@@ -39,7 +39,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="main.PlayingActivity"
+            android:name="playing.PlayingActivity"
             android:label="Playing"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >

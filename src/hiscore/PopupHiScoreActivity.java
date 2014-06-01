@@ -1,19 +1,14 @@
 package hiscore;
 
-import com.example.snake.R;
-import com.example.snake.R.id;
-import com.example.snake.R.layout;
-
+import tymbark.snake.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewDebug.IntToString;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class PopupHiScoreActivity extends Activity implements OnClickListener {
 
@@ -50,7 +45,7 @@ public class PopupHiScoreActivity extends Activity implements OnClickListener {
 			int LastScore = hst.getLastHiScore();
 			hst.close();
 			popTextScore.setText("" + scoreInt);
-			Log.d("popup","ostatni = "+LastScore);
+			Log.d("popup", "ostatni = " + LastScore);
 			if (scoreInt > LastScore) {
 				// new hiscore
 				newhiscore = true;
@@ -80,7 +75,7 @@ public class PopupHiScoreActivity extends Activity implements OnClickListener {
 				boolean works = true;
 				try {
 					String name = popEditText.getText().toString();
-					//String score = scoreInt.toString();
+					// String score = scoreInt.toString();
 					int score = scoreInt;
 
 					Log.d("PopupHiScoreActivity", "saving... " + score + " : "

@@ -1,0 +1,25 @@
+<!-- From: file:/home/damian/workspace/snake/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="tymbark.snake">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/snake_icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="main.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="HiScore" android:name="hiscore.HiScoreActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="testdraw" android:name="playing.DrawActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="OPT" android:name="options.OptionsActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:label="Playing" android:name="playing.PlayingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:label="New Record" android:name="hiscore.PopupHiScoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,17 +1,16 @@
 package main;
-
-import com.example.snake.R;
-
 import hiscore.HiScoreActivity;
 import hiscore.PopupHiScoreActivity;
 import options.OptionsActivity;
-import android.os.Bundle;
+import playing.DrawActivity;
+import playing.PlayingActivity;
+import tymbark.snake.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -45,6 +44,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 	@Override
 	protected void onResume() {
 		super.onResume();
+		Log.d(TAG,"arc:"+savedOptions[1]);
 		PopupHiScoreActivity.setNewScoreSaved(false);
 	}
 

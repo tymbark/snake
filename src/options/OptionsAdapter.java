@@ -2,7 +2,7 @@ package options;
 
 import java.util.ArrayList;
 
-import com.example.snake.R;
+import tymbark.snake.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

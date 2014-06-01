@@ -1,22 +1,14 @@
 package hiscore;
 
 import java.util.ArrayList;
-import java.util.SortedMap;
 
-import com.example.snake.R;
-import com.example.snake.R.id;
-import com.example.snake.R.layout;
-
+import tymbark.snake.R;
 import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class HiScoreActivity extends Activity implements OnClickListener {
 	@Override
@@ -36,19 +28,19 @@ public class HiScoreActivity extends Activity implements OnClickListener {
 		highScoreTable.open();
 		ArrayList<HighScoreRow> array = new ArrayList<HighScoreRow>();
 		array = highScoreTable.getData();
-		
+
 		array = sort(array);
 		String names = "";
 		String results = "";
 		String lps = "";
 		int i = 0;
-		for(HighScoreRow a : array){
-			//a.setId(i);
+		for (HighScoreRow a : array) {
+			// a.setId(i);
 			i++;
 			names = names + a.getName() + "\n";
 			results = results + a.getResult() + "\n";
 			lps = lps + i + "\n";
-			
+
 		}
 		highScoreTable.close();
 		ResultsName.setText(names);
@@ -57,29 +49,29 @@ public class HiScoreActivity extends Activity implements OnClickListener {
 	}
 
 	private ArrayList<HighScoreRow> sort(ArrayList<HighScoreRow> array) {
-		
+
 		ArrayList<HighScoreRow> sortedArray = new ArrayList<HighScoreRow>();
 		HighScoreRow max;
-		//int d = 9;
+		// int d = 9;
 		int aSize = array.size();
-		while(true){
-			//d--;
+		while (true) {
+			// d--;
 			max = new HighScoreRow(0, "", -1);
-			for(HighScoreRow a : array){
-				//Log.d("sort array","item "+a.getmResult());
-				if(max.getResult()<=a.getResult()){
+			for (HighScoreRow a : array) {
+				// Log.d("sort array","item "+a.getmResult());
+				if (max.getResult() <= a.getResult()) {
 					max = a;
 				}
 			}
-			//Log.d("sort array","max= "+max.getmResult());
+			// Log.d("sort array","max= "+max.getmResult());
 			sortedArray.add(max);
-			for(HighScoreRow a : sortedArray){
-			//Log.d("sarr",""+a.getmResult());
-		}
-			if(aSize == sortedArray.size()){
+			for (HighScoreRow a : sortedArray) {
+				// Log.d("sarr",""+a.getmResult());
+			}
+			if (aSize == sortedArray.size()) {
 				break;
 			}
-			
+
 			array.remove(max);
 		}
 		return sortedArray;

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+
+	
+	<Button
+	    android:id="@+id/snakeUp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/snakeDown"
+	    android:layout_toLeftOf="@+id/snakeRight"
+	    android:layout_toRightOf="@+id/snakeLeft"
+	    android:text="Up" />
+	
+	<Button
+	    android:id="@+id/snakeDown"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_toLeftOf="@+id/snakeRight"
+	    android:layout_toRightOf="@+id/snakeLeft"
+	    android:text="Down" />
+
+	<Button
+	    android:id="@+id/snakeLeft"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignTop="@+id/snakeUp"
+	    android:text="left" />
+	
+	<Button
+	    android:id="@+id/snakeRight"
+	    android:layout_width="80dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/snakeUp"
+	    android:text="right" />
+
+	<FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@+id/snakeUp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true" >
+
+	    <playing.SnakeCage
+	        android:id="@+id/sView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" />
+	</FrameLayout>
+</RelativeLayout>
+<!-- From: file:/home/damian/workspace/snake/res/layout/frame_layout.xml -->
