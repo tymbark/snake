@@ -35,28 +35,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: tymbark.snake" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a073febe-dfa5-4140-a343-58b34bbe6cca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/main/MainActivity.class" afterPath="$PROJECT_DIR$/bin/classes/main/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/options/OptionsAdapter.class" afterPath="$PROJECT_DIR$/bin/classes/options/OptionsAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/playing/PlayingActivity.class" afterPath="$PROJECT_DIR$/bin/classes/playing/PlayingActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$id.class" afterPath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$layout.class" afterPath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$menu.class" afterPath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$string.class" afterPath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$style.class" afterPath="$PROJECT_DIR$/bin/classes/tymbark/snake/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/playing/SnakeEngine.class" afterPath="$PROJECT_DIR$/bin/classes/playing/SnakeEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/playing/SnakeView.class" afterPath="$PROJECT_DIR$/bin/classes/playing/SnakeView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/playing/Timer.class" afterPath="$PROJECT_DIR$/bin/classes/playing/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/pre-dexed/debug/android-support-v4-490a8a935a4b1db7764c7b5bbf8af5246cf93a48.jar" afterPath="$PROJECT_DIR$/build/pre-dexed/debug/android-support-v4-490a8a935a4b1db7764c7b5bbf8af5246cf93a48.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/dex/debug/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playing/PlayingActivity.java" afterPath="$PROJECT_DIR$/src/playing/PlayingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/tymbark/snake/R.java" afterPath="$PROJECT_DIR$/gen/tymbark/snake/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playing/SnakeEngine.java" afterPath="$PROJECT_DIR$/src/playing/SnakeEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playing/SnakeView.java" afterPath="$PROJECT_DIR$/src/playing/SnakeView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/playing/Timer.java" afterPath="$PROJECT_DIR$/src/playing/Timer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snake.iml" afterPath="$PROJECT_DIR$/snake.iml" />
-    </list>
+    <list default="true" id="a073febe-dfa5-4140-a343-58b34bbe6cca" name="Default" comment="" />
     <ignored path="snake.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -1092,7 +1071,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="24" width="1368" height="744" extended-state="6" />
+    <frame x="-1" y="24" width="1368" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
