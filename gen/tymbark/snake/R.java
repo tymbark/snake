@@ -30,10 +30,10 @@ public final class R {
         public static final int hisResultName=0x7f070004;
         public static final int hisResultScore=0x7f070005;
         public static final int listView1=0x7f07000b;
-        public static final int menu_settings=0x7f07001b;
-        public static final int opt_row_cb=0x7f070019;
-        public static final int opt_row_rb=0x7f07001a;
-        public static final int opt_row_text=0x7f070018;
+        public static final int menu_settings=0x7f07001c;
+        public static final int opt_row_cb=0x7f07001a;
+        public static final int opt_row_rb=0x7f07001b;
+        public static final int opt_row_text=0x7f070019;
         public static final int pBack=0x7f070000;
         public static final int pDraw=0x7f070006;
         public static final int pExit=0x7f07000a;
@@ -50,6 +50,7 @@ public final class R {
         public static final int snakeLeft=0x7f070014;
         public static final int snakeRight=0x7f070013;
         public static final int snakeUp=0x7f070011;
+        public static final int snakeView=0x7f070018;
         public static final int tableRow1=0x7f070001;
         public static final int tableRow2=0x7f070002;
         public static final int textView1=0x7f070016;
@@ -63,8 +64,9 @@ public final class R {
         public static final int frame_layout=0x7f030005;
         public static final int options_listview=0x7f030006;
         public static final int playing_view=0x7f030007;
-        public static final int row_text=0x7f030008;
-        public static final int row_text_checkbox=0x7f030009;
+        public static final int playing_view2=0x7f030008;
+        public static final int row_text=0x7f030009;
+        public static final int row_text_checkbox=0x7f03000a;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;

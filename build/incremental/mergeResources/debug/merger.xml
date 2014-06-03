@@ -139,6 +139,11 @@ true
                 qualifiers=""
                 type="layout" />
             <file
+                name="playing_view2"
+                path="/home/damian/workspace/snake/res/layout/playing_view2.xml"
+                qualifiers=""
+                type="layout" />
+            <file
                 name="activity_hiscore"
                 path="/home/damian/workspace/snake/res/layout/activity_hiscore.xml"
                 qualifiers=""
