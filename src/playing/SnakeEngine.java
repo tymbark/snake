@@ -1,14 +1,18 @@
 package playing;
 
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.logging.LogRecord;
 
-public class SnakeEngine {
+public class SnakeEngine{
 
-    private static final int Y_AXIS = 20;
+    private static final int Y_AXIS = 30;
     private static final int X_AXIS = 20;
     private static final String TAG = "SnakeEngine";
+    private static final int REDRAW_IMAGE = 1;
     private SnakeView gameView;
     private Timer gameTimer;
     private SnakeField[][] board;
@@ -16,6 +20,7 @@ public class SnakeEngine {
     private ArrayList<SnakeField> dinner;
     private boolean isRunning;
     private Thread delay;
+    private Handler handler;
 
     public SnakeEngine() {
         init();
@@ -27,13 +32,23 @@ public class SnakeEngine {
     }
 
     private void init() {
-        gameTimer = new Timer(1000, gameView);
+        gameTimer = new Timer(1000, handler);
         delay = new Thread();
-        board = new SnakeField[X_AXIS][Y_AXIS];
+        board = new SnakeField[Y_AXIS][X_AXIS];
         tail = new ArrayList<SnakeField>();
         dinner = new ArrayList<SnakeField>();
         populateBoard();
         gameView.setDrawableObjects(tail, board, X_AXIS, Y_AXIS);
+        handler = new Handler(){
+            @Override
+            public void handleMessage(Message msg){
+                if(msg.what == REDRAW_IMAGE){
+                    Log.d(TAG,"redrawing this shit");
+                    gameView.invalidate();
+                }
+                super.handleMessage(msg);
+            }
+        };
     }
 
 

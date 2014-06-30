@@ -6,17 +6,21 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Rect;
+import android.os.Handler;
+import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
 import java.util.ArrayList;
+import java.util.logging.LogRecord;
 
 import tymbark.snake.R;
 
 public class SnakeView extends View {
 
     private static final String TAG = "SnakeView";
+    private static final int REDRAW_IMAGE = 1;
     SnakeField[][] board;
     ArrayList<SnakeField> snake;
     private static int SIZE_X;
@@ -138,4 +142,5 @@ public class SnakeView extends View {
         }
         prevDir = sf.dir;
     }
+
 }

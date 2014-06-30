@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding = "30dp"
+    android:gravity="bottom"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/pDraw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_draw"
+        android:textSize="30sp" 
+        />
+
+    <Button
+        android:id="@+id/pNewGame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_new_game"
+        android:textSize="30sp" 
+        />
+
+    <Button
+        android:id="@+id/pOptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_opt" 
+        android:textSize="30sp" 
+        />
+    
+
+    <Button
+        android:id="@+id/pHiScore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_hi_score"
+        android:textSize="30sp"/>
+    
+    <Button
+        android:id="@+id/pExit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/s_exit"
+        android:textSize="30sp" />
+
+</LinearLayout>

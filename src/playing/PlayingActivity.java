@@ -10,6 +10,8 @@ import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.util.logging.Handler;
+
 import tymbark.snake.R;
 
 public class PlayingActivity extends Activity implements OnClickListener,
@@ -30,6 +32,8 @@ public class PlayingActivity extends Activity implements OnClickListener,
         super.onCreate(savedInstanceState);
 
         Bundle b = getIntent().getExtras();
+        Handler h;
+
 
         direction = new Vector2D();
         if (b != null) {
@@ -78,7 +82,7 @@ public class PlayingActivity extends Activity implements OnClickListener,
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         boolean vectorStarted = false;
-
+        Log.d(TAG, "touched");
 //        switch (event.getAction()) {
 //            case MotionEvent.ACTION_DOWN:
 //                if (vectorStarted)
